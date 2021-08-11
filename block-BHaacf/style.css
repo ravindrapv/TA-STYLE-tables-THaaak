@@ -73,13 +73,16 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.flex-icons {
+.flex-icons{
     display: flex;
     justify-content: right;
     align-items: center;
 }
 .fab {
     margin-left: 20px;
+}
+.fab:hover{
+    color: #ED563A;
 }
 
 .flex20 {
@@ -99,6 +102,14 @@ body {
 }
 .flex80 {
     flex: 0 1 80%;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-direction, .colum {
+    flex-direction: column;
 }
 .btn-1 {
     background-color: #ED563A;
@@ -123,14 +134,17 @@ body {
 
    
 nav {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 100;
 }
 nav a {
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 20px;
     color: #ffff;
+}
+  .nav :hover {
+    color: #ED563A;
 }
 .logo {
     font-size: 32px;
@@ -142,15 +156,31 @@ strong {
     color: #ED563A;
 }
 .banner {
-    background-color: rgba(103, 108, 114, 0.582);
+    background-color: rgba(103, 108, 114, 0.5);
     padding: 20px;
     margin: 0 auto;
-    position: fixed;
     width: 100%;
+    z-index: 999;
+    top: 0;
+    position: absolute;
 }
 .bg-video {
     width: 100%;
+    height: 100%;
     background-size: cover;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(35,45,56,0.5); 
+}
+.bg-video video {
+    width: 100%;
 }
 /* .overlayText {
     position:absolute;
@@ -172,14 +202,14 @@ strong {
       font-size: 38px;
       font-weight: 700;
       text-transform: uppercase;
-      margin-top: 50px;
+      margin-top: 20px;
   }
   .about-p {
       font-size: 16px;
       font-weight: 0;
       text-transform: capitalize;
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
   }
 
   p {
@@ -224,6 +254,19 @@ h4 {
     margin: 10px;
     margin-top: 30px;
 }
+.hero-hadining {
+    color: #ffff;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.hero-sub {
+    color: #ffff;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .btn-2 {
     background-color: #ED563A;
 }
@@ -244,8 +287,9 @@ h4 {
 }
 table {
     border: 1px solid;
+    margin-bottom: 50px;
     font-size: 24px;
-    width: 700px;
+    /* width: 900px; */
     margin: 0 auto;
 }
 
@@ -261,7 +305,7 @@ caption {
 /*---extra trainers-----*/
 
 .box-2 {
-    padding: 30px 30px;
+    padding: 30px;
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -270,11 +314,12 @@ caption {
 .bg-image-form {
     background: url(../block-BHaacf/assets/slide-01.jpg)no-repeat;
     height: 72vh;
-    width: 80%;
+    width: 100%;
     background-size: cover;
 }
 form {
  padding: 50px;
+ text-align: center;
 }
 
 .input-controle {
@@ -294,4 +339,22 @@ em {
     text-align: center;
     font-size: 24px;
     text-transform: capitalize;
+}
+.box-3 {
+    padding: 30px;
+    width: 400px;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    margin: 0 auto;
+}
+.btn-3 {
+    background-color:tomato;
+    color: #ffff;
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    width: 100%;
 }

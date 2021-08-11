@@ -13,7 +13,7 @@
         <div class="banner">
             <div class="container flex logo">
                 <small>training <strong>studio</strong></small>
-                <nav>
+                <nav class="nav">
                     <ul class="flex">
                         <li><a href="#">home</a></li>
                         <li><a href="#">about</a></li>
@@ -27,11 +27,13 @@
         </div>
         <div class="bg-video">
             <figure>
-                <video src="assets/gym-video.mp4" width="100%"></video>
+                <video muted loop autoplay src="assets/gym-video.mp4"></video>
             </figure>
-            <!-- <div class="overlayText">
-                <p id="topText">Content above your video</p>
-            </div> -->
+            <div class="overlay center colum">
+               <h5 class="hero-hadining">work harder and get stronger</h5>
+               <h1 class="hero-sub">easy with our <strong>gym</strong></h1>
+               <a class="btn" href="#">become a member</a>
+            </div>
         </div>
     </header>
     <main>
@@ -145,14 +147,14 @@
                     <a href="#"><h3>viwe all schadules</h3></a>
                 </div>
             </div>
-            <div>
+            <article>
                 <figure>
                     <img src="assets\training-image-01.jpg" alt="gym-man">
                 </figure>
                 <h4>first training class</h4>
                 <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore odit aliquid quasi incidunt omnis ullam aliquam, officiis repellendus tempore. Cum, qui! Accusamus eos vero expedita temporibus error vitae optio perferendis.</p>
                 <a class="btn-1" href="#">viwe schadule</a>
-            </div>
+            </article>
            </div>
         </section>
         <!-----tabel----->
@@ -215,7 +217,7 @@
             </table>
         </section>
         <!-----extra trainers-->
-        <section class="container">
+        <section class="container flex-50">
             <div>
                 <div class="about-text">
                     <small>extra<strong>trainers</strong></small>
@@ -280,21 +282,23 @@
         </section>
         <!-----map and contact-->
         <section>
-             <div class="flex">
+             <div class="flex flex-50">
                  <div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887926.1197849554!2d12.05241697817023!3d43.02845312960128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2sItaly!5e0!3m2!1sen!2sin!4v1628536912892!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                  </div>
-                 <div class="bg-image-form">
-                    <form action="index.html">
+                 <div class="bg-image-form flex-50">
+                    <form class="box-3" action="index.html">
                         <input class="input-controle" type="text" name="text" id="text" placeholder="enter your name" required>
                         <input class="input-controle" type="email" name="email" id="email" placeholder="enter your email" required>
                         <input class="input-controle" type="text" name="text" id="text" placeholder="subject" required>
                         <input class="msg" type="text" name="massage" id="massage" placeholder="massage">
+                        <a class="btn-3" href="#">submit</a>
                     </form>
                  </div>
              </div>
         </section>
     </main>
+    <!-----footer-->
     <footer>
         <em>copyright &copy;2021 venkatravindra pv <strong>ravindra pv</strong></em>
     </footer>
